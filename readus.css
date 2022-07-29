@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.active {
+    color: rgb(227, 80, 166);
+    font-weight: bold;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+/*navbar*/
+.navbar {
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.469);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+}
+
+.navlinks li {
+    margin: 0 30px;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background: rgb(227, 80, 166);
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.fo img {
+    width: 30px;
+    height: 30px;
+}
+
+.fo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.food {
+    color: rgb(255, 0, 119)
+}
+
+section .rev {
+    text-align: start;
+    color: rgb(245, 188, 54);
+    margin-left: 80px;
+}
+
+div .cus {
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-right: 40px;
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.234)
+}
+
+.tra img {
+    width: 30px;
+    height: 30px;
+}
+
+.tra {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.travel {
+    color: rgb(255, 0, 119)
+}
+
+.con img {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.touch {
+    margin-top: 20px;
+    margin-left: 400px;
+    width: 300px;
+    text-align: center;
+    padding: 10px 20px;
+    background: black;
+    color: whitesmoke;
+    border-radius: 30px;
+}
+
+.con {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    width: 100%;
+    min-height: 20px;
+    padding: 20px 80px;
+    margin: 0px;
+    background: rgb(110, 119, 144);
+    text-align: center;
+}
+
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+
+
+
+/*mobile device*/
+@media only screen and (max-width:850px) {
+    .menu-btn {
+        display: block;
+
+
+    }
+
+    .navbar {
+        padding: 0;
+        height: 30px;
+    }
+
+    /*.logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+
+    }*/
+
+    .navlinks {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: rgb(120, 189, 212);
+        margin-top: -900px;
+        transition: all 0.5s ease;
+
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+        border-radius: 30px;
+
+        position: relative;
+
+    }
+
+    .navlinks li {
+        margin: 30px 0;
+    }
+
+    .touch {
+        margin-top: 20px;
+        margin-left: 200px;
+        width: 300px;
+        text-align: center;
+        padding: 10px 20px;
+        background: black;
+        color: whitesmoke;
+        border-radius: 30px;
+    }
+}

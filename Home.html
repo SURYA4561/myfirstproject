@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h2 class="logo">Explore</h2>
+        <ul class="navlinks">
+            <li class="active" style="color: black;"><a href="#">Home</a></li>
+            <li><a href="./tours.html" style="color: whitesmoke;">Tours</a></li>
+            <li><a href="./readus.html" style="color: whitesmoke;">Read us</a></li>
+            <li class="ctn"><a href="#" style="color: whitesmoke;">Get Help</a></li>
+
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+
+
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Explore World</h2>
+            <div class="line"></div>
+            <a href="#" class="ctn">Get More</a>
+        </div>
+    </header>
+    <!--events-->
+    <section class="events">
+        <div class="title">
+            <h1>Life is A Daring Adventure</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/everest.jpg" alt="">
+                <h4>Everest camp trek</h4>
+                <p>Everyone wants to live on top of the mountain, but all the happiness and growth occurs while you are
+                    climbing it.</p>
+                <a href="#" class="ctn">Know More</a>
+            </div>
+            <div class="col">
+                <img src="./img/beach2.jpg" alt="">
+                <h4>A Day at the <span>Beach</span> is never lost time</h4>
+                <p>There is nothing more relaxing than spending some peaceful moments near a beach.</p>
+                <a href="#" class="ctn">Know More</a>
+            </div>
+        </div>
+
+    </section>
+    <section class="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit suscipit quae expedita ullam vero
+                laudantium labore enim. Exercitationem aperiam, illo est quos </p>
+            <a href="#" class="ctn">Know More</a>
+        </div>
+    </section>
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>UPCOMING TOURS AND DESTINATIONS</h1>
+                <p>I have found out that there ain't no surer way to find out whether you like people or hate them than
+                    to travel with themI have found out that there ain't no surer way to find out whether you like
+                    people or hate them than to travel with them</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col img-col">
+                <div class="img-gallery">
+                    <img src="./img/everest.jpg" alt="">
+                    <img src="./img/temple1.jpg" alt="">
+                    <img src="./img/kerala1.jpg" alt="">
+                    <img src="./img/beach1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <p>17 Fifth avenue, xyz, New York,USA| phone: 9000-123-456 |Email:contact@example.com</p>
+        <p>Copyright © 2022 </p>
+    </section>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navLinks = document.querySelector('.navlinks')
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+
+</html>
